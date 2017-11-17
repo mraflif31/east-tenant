@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+  <ion-list>
+      <ion-item *ngFor="let item of items | async">
+        <ion-thumbnail item-start>
+          <img src="{{item.img_url}}">
+        </ion-thumbnail>
+        <p text-wrap><strong> {{item.nama_makanan}} </strong></p>
+        <p text-wrap style="font-size: 1rem;"><ion-note> {{item.nama_tenant}} </ion-note></p>
+        <ion-badge item-end> {{item.kode_harga}} </ion-badge>
+      </ion-item>
+  </ion-list>
+</ion-content>

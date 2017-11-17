@@ -1,0 +1,8 @@
+<ion-content>
+  <ion-list>
+      <ion-item *ngFor="let item of items | async">
+        <p text-wrap><strong> {{item.nama_menu}} </strong></p>
+        <p text-wrap style="font-size: 1rem;">{{item.harga_menu}}</p>
+      </ion-item>
+  </ion-list>
+</ion-content>
